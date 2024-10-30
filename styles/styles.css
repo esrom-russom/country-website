@@ -1,4 +1,4 @@
---------------------------------------------- */ 
+/* Global Styles */
 body {
     font-family: "Roboto", serif, Arial, sans-serif;
     font-size: 1rem;
@@ -30,26 +30,18 @@ h2 {
     font-size: 1.75rem;
 }
 
-p {
-    margin: 0 0 1.5em;
-}
 
-
-/* Elements
---------------------------------------------- */
+/* Lists */
 ul,
 li {
     margin-left: 1.5em;
     padding: 0 0 0 2.5em;
 }
 
-
-
-/* Links
---------------------------------------------- */
+/* Links */
 a,
 a:visited {
-    color: #e04040;
+    color: #fcdb51;
 }
 
 a:hover,
@@ -58,14 +50,13 @@ a:focus {
 }
 
 a:focus {
-    outline: 2px dotted #f62424;
+    outline: 2px solid #f62424;
 }
 
 a:active {
     color: #ffffff;
     background-color: #e04040;
 }
-/* header below */
 
 .site-header {
     display: flex;
@@ -73,57 +64,142 @@ a:active {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding-left: .5rem;
+    padding: .5rem;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: #ffffff;
+    background-color: #565455;
 }
 
+/* Image Cover */
 .img-cover img {
-    /* position: fixed; */
+    display: block;
+    position: relative;
     width: 100%;
     object-fit: cover;
-    max-height: 100%;
-    /* height: 100vh; */
-
+    height: 100vh;
 }
 
+/* make sure the color contrast is checked and clamp works as-well */
 .img-cover h1 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
+    font-size: 3.5rem;
     transform: translateX(-50%);
     color: #f8ff2b;
-    /* make sure to check the color contrast beofre submitting */
+    font-size: clamp(2rem, 5vw + 1rem, 6rem);
 }
 
 
-
-.img-cover h1 {
-    top: 50%;
-    left: 75%;
-    font-size: 6rem;
+.site-nav {
+    display: flex;
+    align-items: center;
 }
 
-.site-nav ul {
-    list-style: none;
+.nav-menu {
     display: flex;
     justify-content: flex-end;
     gap: 16px;
-    padding: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+/* Hide nav-menu on mobile view */
+@media (max-width: 50em) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+
+
+/* Media Query for Mobile View */
+@media (max-width: 50em) {
+    .site-nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .site-nav.active .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .img-cover h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 3.5rem;
+        transform: translateX(-50%);
+        color: #f8ff2b;
+        font-size: clamp(2rem, 5vw + 1rem, 6rem);
+    }
+}
+
+.site-nav.active ul li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+    /* Initially hidden on desktop */
+}
+
+@media (max-width: 50em) {
+
+    /* Show menu toggle on mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Optionally display nav-menu when active */
+    .site-nav.active .nav-menu {
+        background-color: #565455;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+
 
 .home-text {
+    background-color: gray;
     display: flex;
+    align-content: center;
+    justify-content: center;
+   
+}
+.home-text blockquote{
+    background-color: aliceblue;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    border: 2px solid;
 }
 
-/* 
-    display: flex;
-    list-style: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-} */
+.home-text p{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+footer p {
+    text-align: center;
+}

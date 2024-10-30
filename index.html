@@ -21,51 +21,39 @@
     <!-- css files  -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
     <!-- favacon -->
     <link rel="icon" type="image/png" href="favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
+    <script src="script.js/navigation.js" defer></script>
+
 </head>
 
 <body>
 
-
     <header class="site-header">
-
-        <!-- <div class="site-header"> you might wanna change it to site wrapper -->
-
         <a href="index.html" class="site-name">
-        
-        <img src="favicon-48x48.png" alt="">
-            <!-- <img src="favicon/favicon-48x48.png" alt=""> -->
+            <img src="favicon-48x48.png" alt=" letter B in capital with red and orange stripes, Site Logo">
         </a>
-    
-
-
         <nav class="site-nav" id="site-nav">
-
-
-             <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                        <title>Menu Icon</title>
-                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-                    </svg>
-                </button>
-
+            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                    <title>Menu Icon</title>
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                </svg>
+            </button>
             <ul class="nav-menu" id="header-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="landscape.html">Landscapes</a></li>
+                <li><a href="Attractions.html">Attractions</a></li>
                 <li><a href="credit.html">Credit</a></li>
             </ul>
-
         </nav>
-
-        <!-- </div> -->
-
     </header>
+
     <main>
 
         <section>
@@ -75,14 +63,18 @@
 
                 <h1>Barcelona</h1>
             </div>
-            <section class="home-text">
-                <p>home to some of the most beautiful Gothic architecture and a city filled with excellent cuisine</p>
-            </section>
         </section>
+        <section class="home-text">
+            <blockquote> “Barcelona, archives of courtesy, shelter of the foreigners, hospital of the poor, father-land
+                of the brave, vengeance of the offended and pleasant correspondence of firm friendship, and in site, and
+                in beauty, unique.” <cite>- Miguel de Cervantes, Writer.</cite> </blockquote>
+        </section>
+       
     </main>
     <footer>
-        <p></p>
+        <p>FWDP-2024 © Esrom Russom</p>
     </footer>
 </body>
+
 
 </html>

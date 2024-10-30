@@ -1,0 +1,48 @@
+/* Global Styles */
+body {
+    font-family: "Roboto", serif, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: #282828;
+    background-color: #a3a2a2;
+
+}
+
+.page-wrapper {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    text-align: center;
+    margin: 1rem;
+
+}
+
+.about h1 {
+    margin-top: 12rem;
+    font-size: clamp(2rem, 5vw + 1rem, 4rem);
+    color: #000000;
+    font-family: "Playfair Display", serif;
+
+}
+
+.about-barca {
+    /* height: 20rem; */
+    margin-top: 7rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-barca video{
+    margin-top: 1rem;
+}
