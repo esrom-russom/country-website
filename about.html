@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="about" content="about the city of Barcelona.">
+        <title>About</title>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <!-- css files  -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/about.css">
+
+        <!-- favacon -->
+        <link rel="icon" type="image/png" href="favicon-48x48.png" sizes="48x48" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="manifest" href="site.webmanifest" />
+        <script src="script.js/navigation.js" defer></script>
+
+    </head>
+
 </head>
+
 <body>
-    
+        <header class="site-header">
+            <a href="index.html" class="site-name">
+                <img src="favicon-48x48.png" alt=" letter B in capital with red and orange stripes, Site Logo">
+            </a>
+            <nav class="site-nav" id="site-nav">
+                <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                        <title>Menu Icon</title>
+                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                    </svg>
+                </button>
+                <ul class="nav-menu" id="header-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="credit.html">Credit</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <section class="about page-wrapper">
+                <h1>About The City Of Barcelona</h1>
+            </section>
+            <div class="about-barca">
+                <video src="media/16995-277920510_medium.mp4" autoplay loop muted></video>
+            </div>
+            <section class="page-wrapper">
+
+                <div>
+                    <h2>Overview</h2>
+                    <p>Barcelona is the vibrant capital of Catalonia, a region in northeastern Spain, and is known for its
+                    rich history, modernist architecture, and Mediterranean lifestyle. It is the second-most populous
+                    city in Spain, following Madrid, and is an important cultural, economic, and technological hub
+                    within Europe.</p>
+
+                    <!-- <img src="media/pexels-oidonnyboy-5282585.jpg" alt="picture of diffrent buildings in Barcelona"> -->
+                    <img src="media/pexels-olenagoldman-998736.jpg" alt="">
+                </div>
+                <div>
+                    
+                    <h2>Cultural Scene</h2>
+                    <p>
+                        Museums and Art: Barcelona is home to world-famous museums like the Picasso Museum and the Joan Miró
+                        Foundation. The city also has a thriving contemporary art scene.
+                        Festivals: Major festivals, like La Mercè and Primavera Sound, celebrate the city's culture and attract
+                        tourists from all over the world.
+                        Language: Barcelona is bilingual, with residents speaking both Catalan and Spanish.</p>
+                        <img src="media/bust-5524961_1280.jpg" alt="">
+                    </div>
+                </section>
+        </main>
+
+
+    <footer>
+        <p>FWDP 2024-Esrom Russom</p>
+    </footer>
 </body>
+
 </html>
