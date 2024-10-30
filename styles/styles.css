@@ -49,9 +49,9 @@ a:focus {
     color: #e04040;
 }
 
-a:focus {
+/* a:focus {
     outline: 2px solid #f62424;
-}
+} */
 
 a:active {
     color: #ffffff;

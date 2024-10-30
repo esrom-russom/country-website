@@ -46,16 +46,16 @@ a:visited {
 
 a:hover,
 a:focus {
-    color: #e04040;
+    color: #ffffff;
 }
 
-a:focus {
+/* a:focus {
     outline: 2px solid #f62424;
-}
+} */
 
 a:active {
     color: #ffffff;
-    background-color: #e04040;
+    background-color: #655d5d;
 }
 
 .site-header {
