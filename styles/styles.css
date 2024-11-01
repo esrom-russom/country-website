@@ -88,9 +88,17 @@ a:active {
     left: 75%;
     font-size: 3.5rem;
     transform: translateX(-50%);
-    color: #f8ff2b;
+    color: #e2e2e2;
     font-size: clamp(2rem, 5vw + 1rem, 6rem);
 }
+h1 {
+    background-color: #00000080; /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 8px #00000099; /* Text shadow for blur effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
 
 
 .site-nav {
@@ -143,7 +151,7 @@ a:active {
         left: 50%;
         font-size: 3.5rem;
         transform: translateX(-50%);
-        color: #f8ff2b;
+        color : #e2e2e2;
         font-size: clamp(2rem, 5vw + 1rem, 6rem);
     }
 }

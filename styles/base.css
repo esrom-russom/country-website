@@ -72,25 +72,6 @@ a:active {
     background-color: #565455;
 }
 
-/* Image Cover */
-/* .img-cover img {
-    display: block;
-    position: relative;
-    width: 100%;
-    object-fit: cover;
-    height: 100vh;
-}
-
-.img-cover h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 3.5rem;
-    transform: translateX(-50%);
-    color: #f8ff2b;
-    font-size: clamp(2rem, 5vw + 1rem, 6rem);
-} */
-
 
 .site-nav {
     display: flex;
