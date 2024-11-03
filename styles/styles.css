@@ -16,7 +16,6 @@ h4,
 h5,
 h6 {
     font-family: "Playfair Display", 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -48,6 +47,8 @@ a:hover,
 a:focus {
     color: #e04040;
 }
+
+
 
 /* a:focus {
     outline: 2px solid #f62424;
@@ -114,6 +115,8 @@ h1 {
     padding: 0;
     margin: 0;
 }
+
+
 
 /* Hide nav-menu on mobile view */
 @media (max-width: 50em) {

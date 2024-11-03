@@ -35,7 +35,12 @@ body {
     font-family: "Playfair Display", serif;
 
 }
-
+@media (min-max: 50em){
+     .site-main h1{
+        display: flex;
+        text-align: center;
+     }
+}
 .about-barca {
     /* height: 20rem; */
     margin-top: 7rem;

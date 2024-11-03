@@ -16,7 +16,6 @@ h4,
 h5,
 h6 {
     font-family: "Playfair Display", 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -73,21 +72,54 @@ a:active {
 }
 
 
+
 .site-nav {
     display: flex;
     align-items: center;
 }
 
+
+
 .nav-menu {
     display: flex;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 1rem;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Hide nav-menu on mobile view */
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu li a {
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a:focus {
+    background-color: #000;
+    color: #fcdb51;
+}
+
+.skip-to-content {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    transition: top 0.3s;
+    text-decoration: none;
+}
+
+
+
 @media (max-width: 50em) {
     .nav-menu {
         display: none;
@@ -126,17 +158,15 @@ a:active {
 
 .menu-toggle {
     display: none;
-    /* Initially hidden on desktop */
 }
 
 @media (max-width: 50em) {
 
-    /* Show menu toggle on mobile */
     .menu-toggle {
         display: block;
     }
 
-    /* Optionally display nav-menu when active */
+
     .site-nav.active .nav-menu {
         background-color: #565455;
         display: flex;
